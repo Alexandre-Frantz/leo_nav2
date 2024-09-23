@@ -265,10 +265,10 @@ global_costmap:
     ros__parameters:
       use_sim_time: True
 
-map_server:
-  ros__parameters:
-    use_sim_time: True
-    yaml_filename: "turtlebot3_world.yaml"
+# map_server:
+#   ros__parameters:
+#     use_sim_time: True
+#     yaml_filename: "turtlebot3_world.yaml"
 
 map_saver:
   ros__parameters:
@@ -333,8 +333,8 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: false
     feedback: "OPEN_LOOP"
-    max_velocity: [0.1, 0.0, 0.1]
-    min_velocity: [-0.1, 0.0, -0.1]
+    max_velocity: [0.01, 0.0, 0.01]
+    min_velocity: [-0.01, 0.0, -0.01]
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0
     max_accel: [2.5, 0.0, 3.2]
